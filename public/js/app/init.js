@@ -1,0 +1,22 @@
+(function(){
+	angular.module("app")
+	.config(function($routeProvider){
+		$routeProvider
+			.when("/products",{
+				templateUrl:"template/Products.html",
+				controller:"ProductsController"
+			})
+			.when("/cart",{
+				templateUrl:"template/Cart.html",
+				controller:"CartController"
+			})
+			.when("/about",{
+				templateUrl:"template/About.html",
+				controller:"AboutController"
+			})
+			.otherwise({
+				templateUrl:"template/Products.html",
+				controller:"ProductsController"
+			});
+	});
+})();

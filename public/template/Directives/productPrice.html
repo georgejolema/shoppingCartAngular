@@ -1,0 +1,26 @@
+<div class="col-sm-4 col-lg-4 col-md-4">
+	<div class="thumbnail">
+		<img src="http://placehold.it/320x150" alt="">
+		<div class="caption">
+			<h4 class="pull-right">{{product.price | currency}}</h4>
+			<h4><a href="#">{{product.name}}</a>
+			</h4>
+			<p>{{product.description}}</p>
+		</div>
+		
+		<div class="ratings">
+			
+			<p class="pull-right">{{product.reviews}} reviews</p>
+			<p>
+				<span class="glyphicon" ng-class="product.rating<1?'glyphicon-star-empty':'glyphicon-star'"></span>
+				<span class="glyphicon" ng-class="product.rating<2?'glyphicon-star-empty':'glyphicon-star'"></span>
+				<span class="glyphicon" ng-class="product.rating<3?'glyphicon-star-empty':'glyphicon-star'"></span>
+				<span class="glyphicon" ng-class="product.rating<4?'glyphicon-star-empty':'glyphicon-star'"></span>
+				<span class="glyphicon" ng-class="product.rating<5?'glyphicon-star-empty':'glyphicon-star'"></span>
+			</p>
+			<div>
+				<button class="btn btn-primary" ng-click="addToCart()">Add to cart</div>
+			</div>
+		</div>
+	</div>
+</div>
