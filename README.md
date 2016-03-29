@@ -27,4 +27,4 @@ Once all the dependencies are set, you only need to run the following command:
 ```
 gulp
 ```
-That command will run all the automated tasks which includes the startup of the application. The application will run using the port 5000. In order to get it work you need to access the following address: http://localhost:5000
+That command will run all the automated tasks which includes the startup of the application. The application will run using the port 5000. In order to get it work you need to access the following address: http://localhost:3001
